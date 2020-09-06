@@ -1,0 +1,10 @@
+#presentation{
+    background-image: url(../images/novo_experimento.png);
+    position: absolute;
+    background-attachment: fixed;
+}
+
+#about img{
+    width: 15rem;
+    height: 23rem;
+}
