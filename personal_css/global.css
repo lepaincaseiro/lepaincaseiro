@@ -1,9 +1,9 @@
-nav {
-    background-image: linear-gradient(-225deg, #85BC92 50%, #84BB91 48%, #7AB689 100%);
-}
-
 h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav a, i {
+    font-size: 1.5rem;
 }
 
 .size-page {
@@ -22,7 +22,6 @@ h1 {
 
 .text-site {
     /* color: #8BC34A; */
-
     background: -webkit-linear-gradient(#53BA4B, #92CD52);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -68,16 +67,31 @@ h1 {
     position: absolute;
 }
 
+#carousle img {
+    width: 100%;
+    height: 100%;
+}
+
 #perfil img {
     width: 8rem;
     height: 12rem;
 }
 
-#navbar a, i {
-    font-size: 1.5rem;
-}
-
 @font-face {
     font-family: "ananda";
     src: url(Ananda.ttf);
+}
+
+@media only screen and (max-width: 600px) {
+    #perfil img {
+        width: 5rem;
+        height: 8rem;
+    }
+    #carousel img {
+        height: 100%;
+    }
+    .size-page {
+        height: 600px;
+        width: 100%;
+    }
 }

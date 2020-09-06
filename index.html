@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 
     <!-- Personal CSS -->
-    <link rel="stylesheet" href="personal_css/blobal.css" type="text/css">
+    <link rel="stylesheet" href="personal_css/global.css" type="text/css">
     <link rel="stylesheet" href="personal_css/index.css" type="text/css">
 
     <!-- Optional Scripts -->
     <script type="text/javascript" src="https://kit.fontawesome.com/30b455b9ab.js"></script>
-    <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
@@ -56,34 +57,49 @@
             </div>
         </div>
 
-        <div id="perfilNavbar" class="row col-12 d-flex">
+        <div id="perfilNavbar" class="row col-12 mx-auto d-flex">
 
+            <!-- Perfil -->
             <div id="perfil" class="row col-2 pl-4 pr-auto pt-3 pb-auto">
                 <img src="./images/logo.png" alt="logo">
             </div>
 
-            <div id="navbar" class="col-10 pl-auto mt-5">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-site-active" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-site" href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-site" href="cardapio.html">Cardápio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-site" href="#">Curiosidades</a>
-                    </li>
-                </ul>
-            </div>
+            <!-- Navbar -->
+            <nav id="navbar" class="col-10 ml-auto my-auto navbar navbar-expand-lg">
+
+                <button class="ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite"
+                    aria-controls="navbarSite" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-site">Menu</span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-site-active" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-site" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-site" href="cardapio.html">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-site" href="#">Curiosidades</a>
+
+                    </ul>
+                </div>
+
+            </nav>
 
         </div>
 
-        <div id="title" class="row col-10 col-md-10 mx-auto my-5">
-            <h1 class="display-3 mx-auto text-center text-white"><strong>Massas Artesanais</strong><br> <a
-                    class="scroll" href="#content"><i class="fas fa-arrow-down mt-5 fa-xs text-site"></i></a></h1>
+        <div id="title" class="d-block col-10 row col-10 mx-auto my-5"">
+            <h1 class=" d-none d-md-block col-10 display-3 mx-auto text-center text-white"><strong>Massas
+                Artesanais</strong>
+            </h1>
+            <h1 class="d-sm-none col-10 mx-auto text-center text-white"><strong>Massas Artesanais</strong></h1>
+            <a class="row col-1 scroll mx-auto mt-5" href="#content""><i
+                    class=" mx-auto fas fa-arrow-down fa-4x text-site"></i></a>
         </div>
 
     </section>
@@ -91,23 +107,23 @@
     <section id="content">
 
         <!-- About -->
-        <div id="about" class="col-md-11 mx-auto my-5">
+        <div id="about" class="col-12 col-md-11 mx-auto my-5 py-5">
 
             <div class="row">
 
                 <!-- Image -->
-                <div class="col-11 col-md-3 mx-auto">
-                    <img class="col-inner rounded" src="images/croissant_story.png" alt="croissant_story">
+                <div class="col-12 col-md-3 mx-auto">
+                    <img class="col-inner rounded shadow-sm" src="images/croissant_story.png" alt="croissant_story">
                 </div>
 
                 <!-- Text -->
-                <div class="col-11 col-md-6 mr-auto my-auto ">
+                <div class="col-12 col-md-6 mr-auto my-5 ">
                     <h6 class="card-subtitle mb-2 text-muted">SOBRE</h6>
                     <h2 class="card-title"><strong>Pães caseiros sem conservantes e sob
                             encomenda</strong></h2>
                     <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o
                         conteúdo do card.</p>
-                    <a class="btn text-white bg-site rounded my-auto py-auto px-5"
+                    <a class="btn text-white py-3 bg-site px-5"
                         href="https://api.whatsapp.com/send?phone=5571999020336&text=Estou entrando em contato para adquirir massas artesanais !">
                         <i class="fab fa-whatsapp pr-3"></i>Abrir Whatsapp</a>
                 </div>
