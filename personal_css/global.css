@@ -63,6 +63,14 @@ nav a, i {
     -webkit-text-fill-color: transparent;
 }
 
+.navbar-toggler:link, .navbar-toggler:visited {
+    background: transparent;
+}
+
+.navbar-toggler:active {
+    background: #262930;
+}
+
 #carousel {
     position: absolute;
 }
