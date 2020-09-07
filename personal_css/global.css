@@ -71,14 +71,7 @@ nav a, i {
     background: #262930;
 }
 
-#carousel {
-    position: absolute;
-}
 
-#carousle img {
-    width: 100%;
-    height: 100%;
-}
 
 #perfil img {
     width: 8rem;
@@ -91,13 +84,17 @@ nav a, i {
 }
 
 @media only screen and (max-width: 600px) {
+
+    hr{
+        width: 100%;
+        height: 1px;
+    }
+
     #perfil img {
         width: 5rem;
         height: 8rem;
     }
-    #carousel img {
-        height: 100%;
-    }
+    
     .size-page {
         height: 600px;
         width: 100%;
