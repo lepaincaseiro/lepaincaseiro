@@ -2,6 +2,8 @@ footer  = #262930
 
 gradiente do site = #53BA4B, #92CD52, #B6D857
 
+gradiente rosa do site = #BB5E7E, #C27490, #C06F8C
+
 background-image: linear-gradient(-225deg, #53BA4B 50%, #92CD52 48%, #B6D857 100%);
 
 text-color = #8BC34A;
