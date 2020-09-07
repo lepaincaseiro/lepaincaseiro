@@ -1,0 +1,19 @@
+#presentation{
+    background-image: url(../images/novo_experimento.png);
+    
+    background-attachment: fixed;
+}
+
+#about img{
+    height: 23rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #presentation{
+        height: auto;
+    }
+
+    #about img{
+        height: 12rem;
+    }
+}

@@ -31,8 +31,12 @@ nav a, i {
     background: linear-gradient(-225deg, #53BA4B 100%, #92CD52 100%, #B6D857 100%);
 }
 
+.br-white-site {
+    background-color: #F8FAFB;
+}
+
 .nav-link-site:link, .nav-link-site:visited {
-    color: white;
+    color: #F8FAFB;
 }
 
 .nav-link-site:hover {
@@ -42,7 +46,7 @@ nav a, i {
 }
 
 .nav-link-site:active {
-    color: white;
+    color: #F8FAFB;
 }
 
 .nav-link-site-active:link, .nav-link-site-active:visited {
@@ -71,7 +75,16 @@ nav a, i {
     background: #262930;
 }
 
+.levitate {
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in-out
+}
 
+.levitate:hover {
+    top: -4px;
+    box-shadow: 0 8px 20px #999
+}
 
 #perfil img {
     width: 8rem;
@@ -84,17 +97,14 @@ nav a, i {
 }
 
 @media only screen and (max-width: 600px) {
-
-    hr{
+    hr {
         width: 100%;
         height: 1px;
     }
-
     #perfil img {
         width: 5rem;
         height: 8rem;
     }
-    
     .size-page {
         height: 600px;
         width: 100%;
