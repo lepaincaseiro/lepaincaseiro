@@ -9,13 +9,6 @@
     font-size: 1rem;
 }
 
-/* Hover Zoom */
-
-@font-face {
-    font-family: "ananda";
-    src: url(Ananda.ttf);
-}
-
 @media only screen and (max-width: 600px) {
     #presentation {
         background-size: inherit;

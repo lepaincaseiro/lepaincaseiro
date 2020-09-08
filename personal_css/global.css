@@ -1,12 +1,12 @@
-body{
+body {
     background-color: #F8FAFB;
 }
 
 h1, h2, h3 {
-font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', cursive;
 }
 
-ul{
+ul {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -18,15 +18,40 @@ footer {
     background-color: #262930;
 }
 
-footer ul{
-list-style: none;
+footer ul {
+    list-style: none;
 }
 
-footer .rounded-circle {
+.transition-site {
+    background: linear-gradient(-225deg, #53BA4B 100%, #92CD52 100%, #B6D857 100%);
+    color: white;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.transition-site::before {
+    background: #262930;
+    color: white;
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.transition-site:hover {
+    background: #353842;
+    color: white;
+}
+
+.rounded-circle {
     width: 3rem;
     height: 3rem;
 }
-
 
 .size-page {
     height: 100vh;
@@ -123,9 +148,7 @@ footer .rounded-circle {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
-
 @media only screen and (max-width: 600px) {
-    
     #perfil img {
         width: 5rem;
         height: 8rem;

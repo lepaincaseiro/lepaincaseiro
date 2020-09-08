@@ -1,0 +1,4 @@
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+font-family: 'Comfortaa', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
