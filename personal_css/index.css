@@ -1,7 +1,8 @@
-#presentation{
+#presentation {
     background-image: url(../images/novo_experimento.png);
     background-attachment: fixed;
-    background-size: 100rem 50rem;
+    background-size: 96rem 46rem;
+    background-repeat: no-repeat;
 }
 
 #about a {
@@ -10,18 +11,17 @@
 
 /* Hover Zoom */
 
-
 @font-face {
     font-family: "ananda";
     src: url(Ananda.ttf);
 }
 
 @media only screen and (max-width: 600px) {
-
-    #presentation{
-        height: auto;
+    #presentation {
+        background-size: inherit;
+        background-repeat: no-repeat;
+        height: 100vh;
     }
-
     #about img {
         height: 25rem;
     }
