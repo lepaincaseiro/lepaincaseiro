@@ -3,11 +3,11 @@ body{
 }
 
 h1, h2, h3 {
-font-family: Tommy;
+font-family: 'Comfortaa', cursive;
 }
 
 ul{
-    font-family: Ndiscover;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 nav a, i {
@@ -122,15 +122,7 @@ footer .rounded-circle {
     height: 14rem;
 }
 
-@font-face {
-    font-family: "Ndiscover";
-    src: url(../fonts/Ndiscover.otf);
-}
-
-@font-face {
-    font-family: "Tommy";
-    src: url(../fonts/Tommy_soft.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
 
 @media only screen and (max-width: 600px) {
     
