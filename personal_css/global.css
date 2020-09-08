@@ -22,6 +22,10 @@ footer ul {
     list-style: none;
 }
 
+.hide{
+    display: none;
+}
+
 /* Transition-site: START */
 
 .transition-site {
