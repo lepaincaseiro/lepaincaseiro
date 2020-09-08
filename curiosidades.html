@@ -15,7 +15,7 @@
 
     <!-- Personal CSS -->
     <link rel="stylesheet" href="personal_css/global.css" type="text/css">
-    <link rel="stylesheet" href="personal_css/index.css" type="text/css">
+    <link rel="stylesheet" href="personal_css/curiosidades.css" type="text/css">
     <link rel="stylesheet" href="personal_css/hoverzoom.css" type="text/css">
 
     <!-- Optional Scripts -->
@@ -41,15 +41,15 @@
         });
     </script>
 
-    <title>Le Pain</title>
+    <title>Curiosidades</title>
 </head>
 
 <body>
 
     <section id="presentation" class="d-block size-page pb-5">
 
-        <!-- Navbar -->
-        <div id="perfilNavbar" class="row col-12 mx-auto d-flex">
+        <!-- Perfil and Navbar-->
+        <div id="perfilNavbar" class="row col-12 d-flex">
 
             <!-- Perfil -->
             <div id="perfil" class="row col-2 pl-4 pr-auto pt-3 pb-auto">
@@ -67,7 +67,7 @@
                 <div class="collapse navbar-collapse" id="navbarSite">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link nav-link-site-active" href="index.html">Início</a>
+                            <a class="nav-link nav-link-site" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-link-site" href="sobre.html">Sobre</a>
@@ -76,8 +76,7 @@
                             <a class="nav-link nav-link-site" href="cardapio.html">Cardápio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-site" href="curiosidades.html">Curiosidades</a>
-                        </li>
+                            <a class="nav-link nav-link-site-active" href="curiosidades.html">Curiosidades</a>
                         <li class="nav-item">
                             <a class="nav-link nav-link-site" href="https://www.instagram.com/lepaincaseiro/"><i
                                     class="fab fa-instagram fa-lg"></i></a>
@@ -91,44 +90,14 @@
 
         <!-- Title -->
         <div id="title" class="d-block col-10 row col-10 mx-auto my-5">
-            <h1 class="d-none d-md-block col-10 display-3 mx-auto text-center text-white">Massas
-                Artesanais
+            <h1 class="d-none d-md-block col-10 display-3 mx-auto text-center text-white">Curiosidades
             </h1>
-            <h1 class="d-sm-none col-10 mx-auto text-center text-white"><strong>Massas Artesanais</strong></h1>
-            <a class="row col-4 col-md-1 scroll mx-auto mt-5" href="#content"><i
-                    class=" mx-auto fas fa-arrow-down fa-4x text-site"></i></a>
+            <h1 class="d-sm-none col-10 mx-auto text-center text-white">Curiosidades</h1>
         </div>
-
 
     </section>
 
-    <section id="content">
-
-        <!-- About -->
-        <div id="about" class="col-11 col-md-10 mx-auto my-5 py-5">
-
-            <div class="row">
-
-                <!-- Image -->
-                <div class="col-12 col-md-3 mx-auto">
-                    <img class="col-inner rounded shadow" src="images/croissant_story.png" alt="croissant_story">
-                </div>
-
-                <!-- Text -->
-                <div class="col-12 col-md-6 mr-auto my-5 ">
-                    <h6 class="card-subtitle mb-2 text-muted">SOBRE</h6>
-                    <h2 class="card-title">Pães caseiros sem conservantes e sob
-                        encomenda</h2>
-                    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o
-                        conteúdo do card.</p>
-                    <a class="btn transition-site py-3 px-5"
-                        href="https://api.whatsapp.com/send?phone=5571999020336&text=Olá, tenho interesses em seus produtos !">
-                        <i class="fab fa-whatsapp pr-3"></i>Abrir Whatsapp</a>
-                </div>
-
-            </div>
-
-        </div>
+    <section id="content" class="bg-white-site my-5">
 
         <!-- Curiosities -->
         <div id="curiosities" class="col-11 col-md-10 mx-auto my-5- py-5">
@@ -248,37 +217,6 @@
         </div>
 
     </footer>
-
-
-
-
-
-
-
-    
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
-
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyBNmJS9lNPiKkT0al4gfrjwEFIAI1_2e04",
-            authDomain: "le-pain-website.firebaseapp.com",
-            databaseURL: "https://le-pain-website.firebaseio.com",
-            projectId: "le-pain-website",
-            storageBucket: "le-pain-website.appspot.com",
-            messagingSenderId: "149951040413",
-            appId: "1:149951040413:web:2ef81157cfab378be7bd74",
-            measurementId: "G-7PZZF6VVP4"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
-    </script>
 
 </body>
 
