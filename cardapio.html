@@ -273,6 +273,44 @@
 
     </footer>
 
+    <a id="configButton" class="hide" href="administrar.html">
+        <i id="configIcon" class="float-icon-site bg-site fas fa-user-cog fa-4x"></i>
+    </a>
+    <button id="logoutButton" class="hide" type="submit">
+        <i id="logoutIcon" class="float-icon-site bg-danger fas fa-sign-out-alt fa-4x"></i>
+    </button>
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBNmJS9lNPiKkT0al4gfrjwEFIAI1_2e04",
+            authDomain: "le-pain-website.firebaseapp.com",
+            databaseURL: "https://le-pain-website.firebaseio.com",
+            projectId: "le-pain-website",
+            storageBucket: "le-pain-website.appspot.com",
+            messagingSenderId: "149951040413",
+            appId: "1:149951040413:web:2ef81157cfab378be7bd74",
+            measurementId: "G-7PZZF6VVP4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="personal_js/logout.js"></script>
+
 </body>
 
 </html>

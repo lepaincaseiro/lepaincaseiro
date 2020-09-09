@@ -15,6 +15,7 @@
     <!-- Personal CSS -->
     <link rel="stylesheet" href="personal_css/global.css" type="text/css">
     <link rel="stylesheet" href="personal_css/login.css" type="text/css">
+    <link rel="stylesheet" href="personal_css/forms.css" type="text/css">
 
     <!-- Optional Scripts -->
     <script type="text/javascript" src="https://kit.fontawesome.com/30b455b9ab.js"></script>
@@ -102,9 +103,6 @@
                         <input type="password" name="password" id="pass" required>
                         <label for="password" class="label-site"><span class="content-site">Senha</span></label>
                     </div>
-
-                    <button type="submit" id="logoutButton" class="btn bg-danger text-white float-right ml-3 hide">Log
-                        out</button>
                     <button type="submit" id="loginButton" class="btn bg-site text-white float-right">Log
                         in</button>
 
@@ -208,6 +206,13 @@
         </div>
 
     </footer>
+
+    <a id="configButton" class="hide" href="administrar.html">
+        <i id="configIcon" class="float-icon-site bg-site fas fa-user-cog fa-4x"></i>
+    </a>
+    <button id="logoutButton" class="hide" type="submit">
+        <i id="logoutIcon" class="float-icon-site bg-danger fas fa-sign-out-alt fa-4x"></i>
+    </button>
 
 
 

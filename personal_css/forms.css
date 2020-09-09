@@ -1,0 +1,51 @@
+.form-site {
+    position: relative;
+    overflow: hidden;
+}
+
+.form-site input {
+    background-color: #F8FAFB;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none;
+}
+
+.form-site label {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form-site label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid green;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.content-site {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form-site input:focus + .label-site .content-site, .form-site input:valid + .label-site .content-site{
+    transform: translateY(-125%);
+    color: green;
+}
+
+.form-site input:focus + .label-site::after, .form-site input:valid + .label-site::after{
+    transform: translateX(0%);
+}

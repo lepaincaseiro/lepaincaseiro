@@ -14,7 +14,8 @@
 
     <!-- Personal CSS -->
     <link rel="stylesheet" href="personal_css/global.css" type="text/css">
-    <!-- <link rel="stylesheet" href="personal_css/admnistrar.css" type="text/css"> -->
+    <link rel="stylesheet" href="personal_css/administrar.css" type="text/css">
+    <link rel="stylesheet" href="personal_css/forms.css" type="text/css">
 
     <!-- Optional Scripts -->
     <script type="text/javascript" src="https://kit.fontawesome.com/30b455b9ab.js"></script>
@@ -34,59 +35,233 @@
 
 <body>
 
-    <div class="d-block justify-content-center">
+    <section id="presentation" class="d-block size-page pb-5">
 
-        <h1 class="text-center col-6 mx-auto my-5">Real Time Database</h1>
+        <!-- Perfil and Navbar-->
+        <div id="perfilNavbar" class="row col-12 d-flex">
 
-        <div class="col-6 shadow-sm mx-auto my-5">
+            <!-- Perfil -->
+            <div id="perfil" class="row col-2 pl-4 pr-auto pt-3 pb-auto">
+                <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
+            </div>
 
-            <form>
+            <!-- Navbar -->
+            <nav id="navbar" class="col-6 col-md-10 text-right ml-auto my-auto navbar navbar-expand-lg">
 
-                <div class="form-group">
-                    <label>Título</label>
-                    <input type="text" class="form-control" id="title" placeholder="Título">
+                <button class="ml-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite"
+                    aria-controls="navbarSite" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-site"><i class="fas fa-bars mr-2 text-site"></i>Menu</span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-site" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-site" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-site" href="cardapio.html">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-site" href="curiosidades.html">Curiosidades</a>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-site" href="https://www.instagram.com/lepaincaseiro/"><i
+                                    class="fab fa-instagram fa-lg"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <label>Sinopse</label>
-                    <input type="text" class="form-control" id="sinopse" placeholder="Sinopse">
-                </div>
-                <div class="form-group">
-                    <label>Descrição</label>
-                    <input type="text" class="form-control" id="description" placeholder="Descrição">
-                </div>
-                <button type="submit" id="addButton" class="btn btn-primary mx-auto">Adicionar</button>
-                <button type="submit" id="logoutButton" class="btn btn-primary bg-danger float-right ml-3 hide">Log out</button>
 
-            </form>
-
-            <a class="mx-auto my-5" href="index.html">Voltar Para Início</a>
+            </nav>
 
         </div>
 
-        <div class="col-6  mx-auto my-5 form-group">
-
-            <form>
-
-                <div class="form-group">
-                    <label for="postsList">Escolha uma Curiosidade</label>
-                    <select id="postsList">
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Sinopse</label>
-                    <input type="text" class="form-control" id="updateSinopse" placeholder="Sinopse">
-                </div>
-                <div class="form-group">
-                    <label>Descrição</label>
-                    <input type="text" class="form-control" id="updateDescription" placeholder="Descrição">
-                </div>
-                <button type="submit" id="updateButton" class="btn btn-primary mx-auto bg-site text-white">Atualizar</button>
-                <button type="submit" id="deleteButton" class="btn btn-primary mx-auto bg-danger">Remover</button>
-
-            </form>
+        <!-- Title -->
+        <div class="d-block col-10 row col-10 mx-auto my-5">
+            <h1 class="d-none d-md-block col-10 display-3 mx-auto text-center text-white">Administrar
+            </h1>
+            <h1 class="d-sm-none col-10 mx-auto text-center text-white">Administrar</h1>
         </div>
 
-    </div>
+    </section>
+
+    <section id="content" class="bg-white-site my-5">
+
+        <div class="row col-11 col-md-10 mx-auto my-5">
+
+            <!-- Add -->
+            <div class="col-12 col-md-6 mx-auto my-5">
+
+                <!-- Title -->
+                <div class="mx-auto mb-4 mt-auto">
+                    <h3 class="text-center">Adicionar</h3>
+                </div>
+
+                <!-- Form -->
+                <form class="col-12 mx-auto my-auto">
+
+                    <div class="d-flex col-12 col-md-8 p-0 mx-auto my-3">
+                        <input type="file" name="image" id="photo" accept="image/*" required>
+                        <label for="image"></label>
+                    </div>
+                    <div class="d-flex col-10 col-md-4 p-0 mx-auto my-3 form-site">
+                        <input type="text" name="title" id="title" required>
+                        <label for="title" class="label-site"><span class="content-site">Título</span></label>
+                    </div>
+                    <div class="d-flex col-12 col-md-8 p-0 mx-auto my-3 form-site">
+                        <input type="text" name="sinopse" id="sinopse"required>
+                        <label for="sinopse" class="label-site"><span class="content-site">Sinopse</span></label>
+                    </div>
+                    <div class="d-flex col-12 col-md-8 p-0 mx-auto my-3 form-site">
+                        <input type="text" name="description" id="description" required>
+                        <label for="description" class="label-site"><span class="content-site">Descrição</span></label>
+                    </div>
+
+                    <div class="d-flex mx-auto my-auto"></div>
+                    <button type="submit" id="addButton" class="btn bg-site text-white float-right">Adicionar</button>
+
+                </form>
+
+            </div>
+
+            <!-- Update or Remove -->
+            <div class="col-12 col-md-6 mx-auto my-5">
+
+                <!-- Title -->
+                <div class="mx-auto mb-4 mt-auto">
+                    <h3 class="text-center">Atualizar/Remover</h3>
+                </div>
+
+                <!-- Form -->
+                <form class="col-12 mx-auto my-auto">
+
+                    <div class="d-flex col-12 col-md-8 mx-auto my-auto">
+                        <label class="mx-auto" for="postsList">Escolha uma Curiosidade</label>
+                        <select class="" id="postsList">
+                        </select>
+                    </div>
+                    <div class="d-flex col-12 col-md-8 p-0 mx-auto my-3 form-site">
+                        <input type="text" name="sinopse" id="updateSinopse" maxlength="50" required>
+                        <label for="sinopse" class="label-site"><span class="content-site">Sinopse</span></label>
+                    </div>
+                    <div class="d-flex col-12 col-md-8 p-0 mx-auto my-3 form-site">
+                        <input type="text" name="updateDescription" id="description" required>
+                        <label for="description" class="label-site"><span class="content-site">Descrição</span></label>
+                    </div>
+
+                    <button type="submit" id="deleteButton" class="btn btn-danger float-right ml-3">Remover</button>
+                    <button type="submit" id="updateButton"
+                        class="btn bg-site text-white float-right">Atualizar</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="pt-5 pb-2">
+
+        <!-- Informations -->
+        <div class="row col-11 col-md-10 mx-auto">
+
+            <!-- Informations -->
+            <div class="d-block col-md-4 mx-auto my-3">
+
+                <!-- Links -->
+                <div class="d-flex">
+                    <div class="d-flex rounded-circle text-center bg-pink-site">
+                        <a class="m-auto" href="https://www.instagram.com/lepaincaseiro/"><i
+                                class="fab fa-instagram text-white fa-1.5x"></i></a>
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div class="text-left my-3 text-white">
+                    <p>Entrega :
+                        <br>
+                        Rua Manoel Barreto. Graça.
+                        <br>
+                        Salvador/Bahia/Brasil.
+                        <br>
+                        CEP: 40.150-360.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Menu -->
+            <div class="col-md-4 mx-auto my-3">
+                <div class="d-block">
+
+                    <h3 class="text-white">Menu</h3>
+
+                    <div class="my-1">
+                        <a class="text-secondary" href=""><i class="fas fa-arrow-right fa-1x pr-2"></i>Home</a>
+                    </div>
+                    <div class="my-1">
+                        <a class="text-secondary" href=""><i class="fas fa-arrow-right fa-1x pr-2"></i>Sobre</a>
+                    </div>
+                    <div class="my-1">
+                        <a class="text-secondary" href=""><i class="fas fa-arrow-right fa-1x pr-2"></i>Cardápio</a>
+                    </div>
+                    <div class="my-1">
+                        <a class="text-secondary" href=""><i class="fas fa-arrow-right fa-1x pr-2"></i>Curiosidades</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-block col-md-4 mx-auto my-3 py-4">
+
+                <div class="row my-3 mx-auto">
+                    <a class="col-12 btn transition-site py-2" href="tel:71999020336"><i
+                            class="fas fa-phone-alt pr-3"></i>Ligue
+                        agora:
+                        (71) 9 99020336</a>
+                </div>
+
+                <div class="row my-3 mx-auto">
+                    <a class="col-12 btn transition-site py-2"
+                        href="https://api.whatsapp.com/send?phone=5571999020336&text=Olá, tenho interesses em seus produtos !"><i
+                            class="fab fa-whatsapp pr-3"></i>Entre em contato</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Creddits -->
+        <div class="row col-11 col-md-10 mx-auto mt-5">
+
+            <div class="col-12">
+                <hr class="bg-white">
+            </div>
+
+            <div class="col-12 text-center text-white mt-2">
+                <blockquote>
+                    <p>&copy 2020 Todos os direitos reservados.</p>
+                    <footer class="blockquote-footer text-white">By <cite><a class="text-site" target=""
+                                href="https://www.messias.gq">Messias
+                                Nunesmaia</a></cite></footer>
+                </blockquote>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <a id="configButton" class="hide" href="administrar.html">
+        <i id="configIcon" class="float-icon-site bg-site fas fa-user-cog fa-4x"></i>
+    </a>
+    <button id="logoutButton" class="hide" type="submit">
+        <i id="logoutIcon" class="float-icon-site bg-danger fas fa-sign-out-alt fa-4x"></i>
+    </button>
+
+
 
 
 

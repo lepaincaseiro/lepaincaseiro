@@ -46,6 +46,7 @@
 
 <body>
 
+
     <section id="presentation" class="d-block size-page pb-5">
 
         <!-- Navbar -->
@@ -249,7 +250,12 @@
 
     </footer>
 
-
+    <a id="configButton" class="hide" href="administrar.html">
+        <i id="configIcon" class="float-icon-site bg-site fas fa-user-cog fa-4x"></i>
+    </a>
+    <button id="logoutButton" class="hide" type="submit">
+        <i id="logoutIcon" class="float-icon-site bg-danger fas fa-sign-out-alt fa-4x"></i>
+    </button>
 
 
 
@@ -281,6 +287,8 @@
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
     </script>
+
+    <script src="personal_js/logout.js"></script>
 
 </body>
 

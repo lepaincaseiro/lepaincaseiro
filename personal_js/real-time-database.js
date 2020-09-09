@@ -6,12 +6,14 @@ var postsList = document.getElementById('postsList');
 var title = document.getElementById('title');
 var sinopse = document.getElementById('sinopse');
 var description = document.getElementById('description');
-// const photo = document.getElementById('photo');
+var photo = document.getElementById('photo');
 var updateSinopse = document.getElementById('updateSinopse');
 var updateDescription = document.getElementById('updateDescription');
 const addButton = document.getElementById('addButton');
 const updateButton = document.getElementById('updateButton');
 const deleteButton = document.getElementById('deleteButton');
+
+console.log(title);
 
 function completeDate() {
 
@@ -40,7 +42,7 @@ addButton.addEventListener('click', (teste) => {
         title: title.value,
         sinopse: sinopse.value,
         description: description.value,
-        // photo: photo,
+        photo: photo.value,
         date: completeDate(),
         updated: false
     })
