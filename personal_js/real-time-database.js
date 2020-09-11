@@ -5,6 +5,7 @@ const storageRef = storage.ref('posts_images');
 var auth = firebase.auth();
 
 var postsList = document.getElementById('postsList');
+var author = document.getElementById('author');
 var title = document.getElementById('title');
 var sinopse = document.getElementById('sinopse');
 var description = document.getElementById('description');
@@ -69,6 +70,7 @@ addButton.addEventListener('click', (teste) => {
                 const autoId = rootRef.push().key
                 rootRef.child(autoId).set({
 
+                    author: author.value,
                     title: title.value,
                     sinopse: sinopse.value,
                     description: description.value,

@@ -1,32 +1,28 @@
 const db = firebase.database();
 const refPosts = db.ref('posts');
-const storage = firebase.storage();
-const storageRef = storage.ref('posts');
 
 
 refPosts.orderByKey().on('value', snapshot => {
-    
+
     var posts = snapshot.val();
     var keys = Object.keys(posts);
-    
-    var pegandoElements='';
-    
+
+    var pegandoElements = '';
+
     for (let i = 0; i < keys.length; i++) {
         var k = keys[i];
         var title = posts[k].title;
-        var sinopse = posts[k].sinopse;
-        // var description = posts[k].description;
+        var author = posts[k].author;
+        var description = posts[k].description;
         var image = posts[k].image_url;
-        console.log(image);
         var updated = posts[k].updated;
-        // var date = posts[k].date;
-        // var createdOrUpdated='Criado em : ';
-        // if (updated) {
-        //     createdOrUpdated= 'Atualizado em : ';
-        // } 
-        pegandoElements += '<div class="hoverzoom mx-auto my-3 my-md-auto"><img src="'+image+'" alt="Imagem para Hoverzoom" /><div class="retina"><p>'+sinopse+'</p><a href="#">Saiba mais</a></div></div>';
+        var date = posts[k].date;
+        var createdOrUpdated = 'Criado em : ';
+        if (updated) {
+            createdOrUpdated = 'Atualizado em : ';
+        }
+        pegandoElements += '<div class="col-12 col-md-4 mx-auto mb-5"><div class="card my-3 shadow"><img class="card-img-top" src="' + image + '"><div class="card-body"><h5 class="card-title">' + title + '</h5><h6 class="text-muted card-substitle mb-2">' + author + '</h6><p class="card-text">' + description + '</p><p class="text-right text-muted mt-5 ml-auto">' + createdOrUpdated + date + '</p></div></div></div>';
     }
-    var testandoLer = document.getElementById('hoverzoons');
+    var testandoLer = document.getElementById('cards-curiosities');
     testandoLer.innerHTML = pegandoElements;
-
 });
