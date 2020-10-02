@@ -156,6 +156,10 @@ a{
     box-shadow: 0 8px 20px #999
 }
 
+#presentation {
+    background-image: url(../images/novo_experimento.jpeg);
+}
+
 #perfil img {
     width: 8rem;
     height: 14rem;
